@@ -1,5 +1,3 @@
-setwd("C:/R/R_folder/app_folder-2/fashion_mnist_app")
-getwd()
 
 
 
@@ -100,16 +98,4 @@ server <- function(input, output) {
 shinyApp(ui = ui, server = server)
 
 
-# Add deployment configuration
-rsconnect::setAccountInfo(name='insightfulapps-for-everyone',
-                          token='16999D937A4EE185888CE7751C7E1B71',
-                          secret='kusXTkNfLTZ/kHdOS5TxsQrgBH5Td4o5P5t3vZM2')
-
-
-#rsconnect::deployApp("C:/R/R_folder/app_folder-2/fashion_mnist_app")
-
-#rsconnect::showLogs("C:/R/R_folder/app_folder-2/fashion_mnist_app")
-
-#library(tools)
-#file_path_as_absolute(fashion_mnist_classification.R)
 
